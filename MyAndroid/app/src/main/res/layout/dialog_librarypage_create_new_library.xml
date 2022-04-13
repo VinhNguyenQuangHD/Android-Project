@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="@drawable/linenear_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/add_new_lib_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Thêm thư viện"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/add_new_lib_lib_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_new_lib_txt"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="Tên thư viện"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_new_lib_lib_name_text"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_new_lib_lib_name_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+            android:hint="Nhập tên thư viện"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/add_new_lib_lib_description_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_new_lib_lib_name_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="Mô tả thư viện"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_new_lib_lib_description_text"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_new_lib_lib_description_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+            android:hint="Nhập mô tả thư viện"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/add_new_lib_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/add_new_lib_lib_description_text">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_new_lib_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="Tạo thư viện"
+                android:textColor="@color/purple_500"
+                android:textSize="15dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/add_new_lib_cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/add_new_lib_btn">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_new_lib_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="Hủy bỏ"
+                android:textColor="@color/purple_500"
+                android:textSize="15dp" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

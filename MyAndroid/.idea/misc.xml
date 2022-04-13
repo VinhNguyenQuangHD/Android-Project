@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/border_button.xml" value="0.18076923076923077" />
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/button_custom_1.xml" value="0.18076923076923077" />
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/button_custom_2.xml" value="0.18076923076923077" />
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.18076923076923077" />
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/ic_baseline_searchs_24.xml" value="0.17848101265822786" />
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/ic_baseline_turn_back_purple.xml" value="0.18076923076923077" />
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/item_sellector.xml" value="0.18076923076923077" />
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/linenear_background.xml" value="0.1125" />
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/linenear_signin_login.xml" value="0.17848101265822786" />
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/rough_corner.xml" value="0.18076923076923077" />
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/rough_corner_2.xml" value="0.17848101265822786" />
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/rough_corner_3.xml" value="0.17848101265822786" />
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/rough_corner_4.xml" value="0.17848101265822786" />
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/rough_corner_5.xml" value="0.1685185185185185" />
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/rought_button.xml" value="0.17848101265822786" />
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/transparent_background.xml" value="0.17848101265822786" />
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/transparent_color.xml" value="0.17848101265822786" />
+        <entry key="..\:/MyAndroid/app/src/main/res/drawable/underline_color.xml" value="0.17848101265822786" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/account_informationpage_edit_dialog.xml" value="0.25" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_account_information_page.xml" value="0.17" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_admin_modepage.xml" value="0.18" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_admin_sign_up_page.xml" value="0.21" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_adminpage_account_manager.xml" value="0.1" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_adminpage_author_manager.xml" value="0.16666666666666666" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_adminpage_author_manager_addnew_author.xml" value="0.2" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_adminpage_author_manager_edit_author.xml" value="0.13405797101449277" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_adminpage_book_manager.xml" value="0.25" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_adminpage_book_manager_addnewbook.xml" value="0.2" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_adminpage_book_manager_edit_book.xml" value="0.15" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_adminpage_comment_manager.xml" value="0.10326086956521739" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_adminpage_report_manager.xml" value="0.10326086956521739" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_author_page.xml" value="0.15715579710144928" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_author_page_detail.xml" value="0.147008547008547" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_book_detail_page.xml" value="0.25" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_chapter_detail_page.xml" value="0.25" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_forgot_passwords_page.xml" value="0.22" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_library_detail.xml" value="0.147008547008547" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_login_page.xml" value="0.22" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_main_home_page.xml" value="0.18" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_main_page.xml" value="0.1" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_main_page_nav.xml" value="0.18" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_notification_page.xml" value="0.15715579710144928" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_option_page.xml" value="0.12001811594202899" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_setting_page.xml" value="0.2" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_sign_in_page.xml" value="0.22" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_splash_screene2.xml" value="0.1" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/activity_topic_discursion.xml" value="0.1" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/dialog_adminpage_authormanager_edit_author.xml" value="0.13994565217391305" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/dialog_adminpage_bookmanager_add_new_chapter_book.xml" value="0.18" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/dialog_book_detailpage_report.xml" value="0.25" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/dialog_bookdetaillpage_more_option.xml" value="0.16" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/dialog_bookdetailpage_voucher_list_com.xml" value="0.14" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/dialog_bookdetailpage_voucher_use.xml" value="0.1" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/dialog_homepage_daily_login.xml" value="0.16" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/dialog_homepage_prize.xml" value="0.22" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/dialog_homepage_vaul.xml" value="0.1" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/dialog_librarypage_create_new_library.xml" value="0.16" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/dialog_loginpage_banned_notification.xml" value="0.1" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/dialog_option_page_vip_member.xml" value="0.18" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/dialog_translate_text.xml" value="0.25" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/fragment_home_frag.xml" value="0.33" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/fragment_lead_frag.xml" value="0.12" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/fragment_library_frag.xml" value="0.11548913043478261" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/fragment_search_frag.xml" value="0.25" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/item_layout.xml" value="0.11548913043478261" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/layout_mainpage_recycleview.xml" value="0.44150943396226416" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/mainpage.xml" value="0.2" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_account_information_book_record.xml" value="0.22" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_accountinformationpage_all_account.xml" value="0.15715579710144928" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_accountinformationpage_friend_list.xml" value="0.22" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_adminpage_accountmanager_list.xml" value="0.25" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_adminpage_author_manager_author_list.xml" value="0.13994565217391305" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_adminpage_book_list.xml" value="0.10643115942028986" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_adminpage_commentmanager_list.xml" value="0.2" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_adminpage_remove_book_on_list.xml" value="0.25" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_adminpage_reportmanager_list.xml" value="0.18" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_authorpage_author_list.xml" value="0.15172101449275363" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_bookdetail_list_lib_item.xml" value="0.1" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_bookdetailpage_comment.xml" value="0.22" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_bookdetailpage_friend_list.xml" value="0.22" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_bookdetailpage_library_choose.xml" value="0.1" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_bookdetailpage_voucher_list_to_choose.xml" value="0.18" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_homepage_friendlist_voucher.xml" value="0.33" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_homepage_what_new_list.xml" value="0.25" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_leaderboardpage_leaderboard_detail.xml" value="0.25" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_leaderboardpage_top_3_best_board.xml" value="0.25" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_libdetailpage_book_list.xml" value="0.25" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_notificationpage_friend_request_list.xml" value="0.18" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_notificationpage_gift_receiver.xml" value="0.33" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_notificationpage_normal_notification.xml" value="0.22" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_searchpage_book_title_list.xml" value="0.25" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_sending_friend_item.xml" value="0.18" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recyclerview_voucher_display.xml" value="0.33" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recycleview_bookdetail_same_type.xml" value="0.22" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recycleview_bookdetailpage_chapter_list.xml" value="0.22" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recycleview_demo.xml" value="0.22" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recycleview_homepage_list_horizon.xml" value="0.25" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recycleview_librarypage_list_personal_library.xml" value="0.25" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recycleview_librarypage_list_recommend.xml" value="0.33" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/recycleview_searching_title_list.xml" value="0.33" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/side_menu_nav_bar_header.xml" value="0.18" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/spinner_drop_down_item.xml" value="0.11548913043478261" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/spinner_settingpage_font.xml" value="0.1" />
+        <entry key="..\:/MyAndroid/app/src/main/res/layout/splash_screene2.xml" value="0.18" />
+        <entry key="..\:/MyAndroid/app/src/main/res/menu/bottom_nav_menu.xml" value="0.14537037037037037" />
+        <entry key="..\:/MyAndroid/app/src/main/res/menu/item_menu.xml" value="0.1675213675213675" />
+        <entry key="..\:/MyAndroid/app/src/main/res/menu/nav_bottom.xml" value="0.16203703703703703" />
+        <entry key="..\:/MyAndroid/app/src/main/res/menu/side_nav_menu.xml" value="0.1675213675213675" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

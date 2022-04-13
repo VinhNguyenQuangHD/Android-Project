@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linenear_background">
+
+    <TextView
+        android:id="@+id/started_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/gothicb0"
+        android:text="Khởi đầu"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="194dp"
+        android:layout_height="240dp"
+        android:layout_below="@+id/started_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/icon_2" />
+
+    <TextView
+        android:id="@+id/splash_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splash_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/ink_free"
+        android:text="START"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/splash_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splash_text1"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/ink_free"
+        android:text="YOUR"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/splash_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splash_text2"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/ink_free"
+        android:text="JOURNEY"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/eula_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_below="@id/splash_text3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Tôi đồng ý với thỏa thuận người dùng"
+        android:textColor="@color/white"
+        android:textSize="16.5dp"
+        android:textStyle="bold"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/eula_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eula_checkbox"
+        android:layout_centerHorizontal="true"
+        android:text="Thỏa thuận người dùng"
+        android:textColor="@color/blue"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lets_go"
+        android:layout_width="233dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/start_button"
+
+        android:onClick="GetClick"
+        android:text="Bắt đầu"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+</RelativeLayout>

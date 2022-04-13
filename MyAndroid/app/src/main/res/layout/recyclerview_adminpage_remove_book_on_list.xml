@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="4dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/book_list_details_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/linenear_background">
+
+        <ImageView
+            android:id="@+id/book_images"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/book_images"
+            android:layout_centerVertical="true"
+            android:text="#Tên sách"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/book_images"
+            android:layout_below="@+id/book_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:text="#Tên tác giả"
+            android:textColor="@color/white"
+            android:textSize="11dp" />
+
+        <RelativeLayout
+            android:id="@+id/watch_and_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/adminpage_option_edit_icon"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/watch_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_remove_red_eye_24" />
+
+            <TextView
+                android:id="@+id/watch_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/watch_icon"
+                android:text="#Lượt xem"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/adminpage_option_delete_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/delete_24" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/adminpage_option_edit_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/adminpage_option_delete_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edit_24" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

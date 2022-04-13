@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linenear_background"
+    tools:context=".Adminpage_AuthorManager">
+
+    <TextView
+        android:id="@+id/adminpage_author_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quản lý tác giả"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"/>
+
+    <TextView
+        android:id="@+id/adding_new_author_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm một tác giả mới"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="30dp"
+        android:layout_below="@+id/adminpage_author_txt"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_new_author_card_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adding_new_author_txt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_new_author_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/medium_orange"
+            android:padding="20dp"
+            android:text="Thêm tác giả mới"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/curent_author_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_new_author_card_frame"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Các tác giả đã thêm"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/search_curent_author_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/curent_author_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rought_button">
+
+        <EditText
+            android:id="@+id/get_author_find_text"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/light_white"
+            android:hint="Nhập tác giả cần tìm"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:id="@+id/search_author_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/ic_baseline_search_24" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_of_curent_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_curent_author_area"
+        android:layout_marginTop="10dp"
+        android:padding="20dp" />
+
+</RelativeLayout>

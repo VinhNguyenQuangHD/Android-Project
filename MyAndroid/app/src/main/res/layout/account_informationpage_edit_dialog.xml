@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/linenear_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Chỉnh sửa thông tin"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/editprofile_txt"
+            />
+
+        <TextView
+            android:id="@+id/editprofile_img_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editprofile_txt"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Hình đại diện"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/editprofile_img_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editprofile_img_txt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="#fileanh"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/editprofile_get_src_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/editprofile_img_txt"
+            android:layout_below="@+id/editprofile_img_txt">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/editprofile_img_link_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đường dẫn"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:textColor="@color/purple_500"
+                android:background="@color/white"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/editprofile_username_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editprofile_img_link"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Tên người dùng"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editprofile_username_text"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editprofile_username_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+            android:hint="Nhập tên người dùng"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/editprofile_description_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editprofile_username_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Giới thiệu"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editprofile_descriptions_text"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editprofile_description_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+            android:hint="Viết giới thiệu"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/editprofile_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/editprofile_descriptions_text">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/edit_dialog_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đóng"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:textColor="@color/purple_500"
+                android:background="@color/white"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/editprofile_confirm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/editprofile_descriptions_text">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/edit_dialog_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thay đổi"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:textColor="@color/purple_500"
+                android:background="@color/white"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/editprofile_uplod_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/editprofile_descriptions_text">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/upload_profile_img_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tải lên"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:textColor="@color/purple_500"
+                android:background="@color/white"/>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

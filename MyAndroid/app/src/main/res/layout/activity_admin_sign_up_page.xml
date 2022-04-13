@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminSignUpPage"
+    android:background="@drawable/linenear_signin_login">
+
+    <ImageView
+        android:id="@+id/sign_in_pic"
+        android:layout_width="230dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/signtuppage_icon" />
+
+    <TextView
+        android:id="@+id/signup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_in_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/gothicb"
+        android:text="ĐĂNG KÝ ADMIN"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/admin_signup_username"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/signup_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/password_frame">
+
+        <ImageView
+            android:id="@+id/icon_signup_username"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/username_icon" />
+
+        <EditText
+            android:id="@+id/edittext_signup_admin_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="11dp"
+            android:backgroundTint="@color/white"
+            android:hint="Tên đăng nhập"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/admin_signup_email"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/admin_signup_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/password_frame">
+
+        <ImageView
+            android:id="@+id/icon_signup_email"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/email" />
+
+        <EditText
+            android:id="@+id/edittext_signup_admin_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="11dp"
+            android:backgroundTint="@color/white"
+            android:hint="Email đăng ký"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/admin_signup_password"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/admin_signup_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/username_frame">
+
+        <ImageView
+            android:id="@+id/icon_signup_password"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/password_icon" />
+
+        <EditText
+            android:id="@+id/edittext_signup_admin_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="11dp"
+            android:backgroundTint="@color/white"
+            android:hint="Nhập mật khẩu"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/admin_signup_rewrite_password"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/admin_signup_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/username_frame"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/icon_signup_rewrite_password"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/rewrite_icon" />
+
+        <EditText
+            android:id="@+id/edittext_signup_admin_rewrite_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="11dp"
+            android:backgroundTint="@color/white"
+            android:hint="Nhập lại mật khẩu"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/signup_get_img"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/admin_signup_rewrite_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/username_frame"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/icon_signup_get_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/image" />
+
+        <TextView
+            android:id="@+id/signup_get_img_text"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="11dp"
+            android:backgroundTint="@color/white"
+            android:text="#hinhadmin"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/signup_get_img_text"
+            app:cardCornerRadius="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_upload_to_server_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/medium_orange"
+                android:text="Tải lên"
+                android:textColor="@color/white" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_admin_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_get_img"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        app:cardCornerRadius="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/admin_signin_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray"
+            android:text="Đăng ký tài khoản admin"
+            android:padding="20dp"
+            android:textSize="20dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:id="@+id/admin_back_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_signin_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Đến đăng nhập"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <ProgressBar
+        android:id="@+id/admin_progress_stage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"
+        />
+
+</RelativeLayout>

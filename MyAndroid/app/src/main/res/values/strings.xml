@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">MyAndroid</string>
+    <string name="title_activity_main_page_nav">MainPageNav</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="bookdetail_spiner">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="bookdetail_spiner_report">
+        <item>Đầu sách này vi phạm bản quyền</item>
+        <item>Đầu sách này không phù hợp</item>
+        <item>Đầu sách này còn nhiều thiếu sót</item>
+    </string-array>
+
+    <string-array name="bookdetail_types">
+        <item>Công việc</item>
+        <item>Phiêu lưu</item>
+        <item>Khoa học</item>
+        <item>Viễn tưởng</item>
+        <item>Cuộc sống</item>
+        <item>Lãng mạn</item>
+        <item>Kinh dị</item>
+        <item>Trinh thám</item>
+        <item>VIP</item>
+
+    </string-array>
+
+    <string name="facebook_app_id">198384959156645</string>
+    <string name="fb_login_protocol_scheme">fb198384959156645</string>
+
+</resources>

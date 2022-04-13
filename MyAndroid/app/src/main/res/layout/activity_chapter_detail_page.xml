@@ -1,0 +1,113 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/linenear_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:background="@drawable/linenear_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChapterDetailPage">
+
+    <TextView
+        android:id="@+id/chapter_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/gothicb"
+        android:text="#Ten chuong tieu thuyet"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/chapter_content"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_below="@+id/translate_interact"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/trial_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chapter_text_2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/move_to_page_btn"
+        android:text="Thời gian dùng thử"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:id="@+id/translate_interact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chapter_text_2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/translate_text_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/translate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/translate_text_btn"
+            android:text="Dịch văn bản"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/chapterdetail_page_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chapter_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="#sotrang"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+
+    <EditText
+        android:id="@+id/move_to_page"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chapter_text_2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/translate_interact"
+        android:backgroundTint="@color/white"
+        android:hint="Nhập số trang"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15dp" />
+
+    <ImageButton
+        android:id="@+id/move_to_page_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/chapter_text_2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/move_to_page"
+        android:background="@drawable/ic_baseline_searchs_24" />
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myandroid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyAndroid">
+        <activity
+            android:name=".AuthorPageDetail"
+            android:exported="true" />
+        <activity
+            android:name=".AdminSignUpPage"
+            android:exported="true" />
+        <activity
+            android:name=".LibraryDetail"
+            android:exported="true" />
+        <activity
+            android:name=".Adminpage_ReportManager"
+            android:exported="true" />
+        <activity
+            android:name=".Adminpage_CommentManager"
+            android:exported="true" />
+        <activity
+            android:name=".Adminpage_AccountManager"
+            android:exported="true" />
+        <activity
+            android:name=".Adminpage_AuthorManager_edit_author"
+            android:exported="true" />
+        <activity
+            android:name=".AuthorPage"
+            android:exported="true" />
+        <activity
+            android:name=".NotificationPage"
+            android:exported="true" />
+        <activity
+            android:name=".AccountInformationPage"
+            android:exported="true" />
+        <activity
+            android:name=".ForgotPasswordsPage"
+            android:exported="true" />
+        <activity
+            android:name=".TopicDiscursion"
+            android:exported="true" />
+        <activity
+            android:name=".Adminpage_BookManager_edit_book"
+            android:exported="true" />
+        <activity
+            android:name=".OptionPage"
+            android:exported="true" />
+        <activity
+            android:name=".Adminpage_AuthorManager_AddnewAuthor"
+            android:exported="true" />
+        <activity
+            android:name=".Adminpage_AuthorManager"
+            android:exported="true" />
+        <activity
+            android:name=".Adminpage_BookManager_Addnewbook"
+            android:exported="true" />
+        <activity
+            android:name=".Adminpage_BookManager"
+            android:exported="true" />
+        <activity
+            android:name=".AdminModepage"
+            android:exported="true" />
+        <activity
+            android:name=".ChapterDetailPage"
+            android:exported="true" />
+        <activity
+            android:name=".BookDetailPage"
+            android:exported="true" />
+        <activity
+            android:name=".MainHomePage"
+            android:exported="true" />
+        <activity
+            android:name=".SignInPage"
+            android:exported="true" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreene2"
+            android:exported="true"
+            android:label="Splash2" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+    </application>
+
+</manifest>

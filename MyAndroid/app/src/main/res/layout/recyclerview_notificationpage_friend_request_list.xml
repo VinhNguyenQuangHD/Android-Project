@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linenear_background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/friend_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Người gửi:"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/friend_from_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/friend_from"
+            android:text="#Ten nguoi gui"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/friend_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/friend_from_txt"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Đã gửi yêu cầu kết bạn với bạn"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:id="@+id/friend_refuse_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/friend_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/close" />
+
+        <ImageButton
+            android:id="@+id/friend_accept_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/friend_content"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/friend_refuse_btn"
+            android:background="@drawable/accept" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

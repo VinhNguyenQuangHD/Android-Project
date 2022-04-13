@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminModepage"
+    android:background="@drawable/linenear_background">
+
+    <TextView
+        android:id="@+id/admin_mode_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Chế độ nhà phát triển"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/book_manager_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_mode_txt"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/medium_orange"
+        android:onClick="Move_to_book_manager"
+        android:padding="20dp"
+        android:text="Quản lý đầu sách"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/author_manager_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_manager_btn"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/violet"
+        android:padding="20dp"
+        android:text="Quản lý tác giả"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:onClick="Move_to_author"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/account_manager_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/author_manager_btn"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/teal_700"
+        android:padding="20dp"
+        android:text="Quản lý tài khoản"
+        android:textColor="@color/light_white"
+        android:textSize="20dp"
+        android:onClick="Move_to_account_manager"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/commend_manager_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account_manager_btn"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/green_blue"
+        android:padding="20dp"
+        android:text="Quản lý bình luận"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:onClick="Move_to_comment_manager"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/report_manager_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commend_manager_btn"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/violet"
+        android:padding="20dp"
+        android:text="Quản lý góp ý,báo cáo"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:onClick="Move_to_report_manager"/>
+
+</RelativeLayout>

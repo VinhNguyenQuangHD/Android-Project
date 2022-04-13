@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="25dp">
+
+    <RelativeLayout
+        android:id="@+id/homepage_whatnew_frame"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        >
+
+        <ImageView
+            android:id="@+id/homepage_book_img_what_new"
+            android:layout_width="65dp"
+            android:layout_height="85dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/book_arsene_lupin" />
+
+        <TextView
+            android:id="@+id/homepage_book_name_what_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/homepage_book_img_what_new"
+            android:text="#Tendausach"
+            android:textColor="@color/purple_500"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/homepage_book_author_what_new"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homepage_book_name_what_new"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/homepage_book_img_what_new"
+            android:text="#Tentacgia"
+            android:textColor="@color/purple_500"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/homepage_book_price_what_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homepage_book_name_what_new"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:text="1000"
+            android:textColor="@color/purple_500"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

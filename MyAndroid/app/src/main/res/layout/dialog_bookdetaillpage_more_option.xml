@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linenear_background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/more_option_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Lựa chọn khác"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+        android:id="@+id/frames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/friendlist_to_choose"
+        android:visibility="gone"
+            app:cardCornerRadius="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buy_for_friend_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Mua cho bạn bè"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700"/>
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/frames_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/frames"
+            android:visibility="gone"
+            app:cardCornerRadius="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/recommend_for_friend_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Gợi ý cho bạn bè"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/frames_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/frames_2"
+            app:cardCornerRadius="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/send_for_friend_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Đóng "
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/friendlist_to_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/more_option_txt"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

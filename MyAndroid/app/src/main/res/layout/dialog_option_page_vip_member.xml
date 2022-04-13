@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linenear_background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/vip_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V.I.P"
+            android:textSize="35dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/vip_img"
+            android:layout_width="180dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/vip_txt"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/vip_card"/>
+        <TextView
+            android:id="@+id/vip_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Một số đặc quyền"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_below="@+id/vip_img"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@+id/vip_benefit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vip_note"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/vip_tik"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/check_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giảm 25% điểm yêu cầu mua sách "
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/vip_tik"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/vip_benefit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vip_benefit"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/vip_tik2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/check_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không tốn phí hoàn trả đầu sách"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/vip_tik2"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/vip_benefit3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vip_benefit2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/vip_tik3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/check_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Được nhận ngẫu nhiên 1 mã giảm giá(2% - 5%)"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/vip_tik3"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/become_vip_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/vip_benefit3">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/become_vip_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="Trở thành VIP (5000 điểm)"
+                android:textColor="@color/purple_500"
+                android:textSize="15dp" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

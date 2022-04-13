@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linenear_background"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/book_voucher_list_img"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gift_card" />
+
+        <TextView
+            android:id="@+id/book_voucher_list_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/book_voucher_list_img"
+            android:text="#Ma giam gia"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/book_voucher_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/book_voucher_list_code"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/book_voucher_list_img"
+            android:text="#Mo ta"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/access_voucher_code_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/cancel_voucher_code_frame"
+            android:layout_marginRight="10dp">
+
+            <ImageButton
+                android:id="@+id/book_voucher_list_using_code"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/accept" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_voucher_list_using_code"
+                android:text="Sử dụng"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/white"
+                android:textSize="8dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/cancel_voucher_code_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp">
+
+            <ImageButton
+                android:id="@+id/book_voucher_list_cancel_code"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_baseline_cancel_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_voucher_list_cancel_code"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="Hủy bỏ"
+                android:textColor="@color/white"
+                android:textSize="8dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

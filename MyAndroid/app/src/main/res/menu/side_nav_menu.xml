@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/author_page"
+            android:title="Tác giả"
+            />
+
+        <item
+            android:id="@+id/account_manager_page"
+            android:title="Tài khoản"/>
+
+        <item
+            android:id="@+id/point_manager_page"
+            android:title="Điểm thưởng"/>
+
+        <item
+            android:id="@+id/becom_membership_page"
+            android:title="Thành viên"/>
+
+        <item
+            android:id="@+id/refund_point_page"
+            android:title="Hoàn trả điểm"/>
+
+        <item
+            android:id="@+id/admin_modes_page"
+            android:title="Quản trị viên"/>
+
+        <item
+            android:id="@+id/contact_us_page"
+            android:title="Liên hệ"/>
+    </group>
+
+</menu>

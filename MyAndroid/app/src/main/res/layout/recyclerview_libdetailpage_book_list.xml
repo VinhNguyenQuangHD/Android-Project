@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/linenear_background">
+
+        <ImageView
+            android:id="@+id/libdetail_book_img"
+            android:layout_width="65dp"
+            android:layout_height="77dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/libdetail_book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/libdetail_book_img"
+            android:text="#tensach"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/libdetail_book_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/libdetail_book_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/libdetail_book_img"
+            android:text="#tentacgia"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/download_book_lib_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp">
+
+            <ImageButton
+                android:id="@+id/download_book_name_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/download" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/download_book_name_btn"
+                android:text="Tải xuống"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sending_book_for_friend_lib_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/download_book_lib_frame"
+            android:layout_marginRight="10dp">
+
+            <ImageButton
+                android:id="@+id/sending_book_for_friend_name_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_baseline_send_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sending_book_for_friend_name_btn"
+                android:text="Cho bạn bè"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/delete_book_from_lib_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/sending_book_for_friend_lib_frame"
+            android:layout_marginRight="10dp">
+
+            <ImageButton
+                android:id="@+id/delete_book_from_lib_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/delete_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/delete_book_from_lib_btn"
+                android:text="Xóa"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

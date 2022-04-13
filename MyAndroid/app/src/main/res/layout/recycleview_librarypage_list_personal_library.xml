@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linenear_background">
+
+    <ImageView
+        android:id="@+id/first_picture"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp" />
+
+    <ImageView
+        android:id="@+id/second_picture"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="15dp" />
+    <ImageView
+        android:id="@+id/third_picture"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageView
+        android:id="@+id/fourth_picture"
+        android:layout_width="34dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:id="@+id/lib_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="15dp"
+        android:text="#Tên thư viện"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lib_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="36dp"
+        android:text="#Mô tả"
+        android:textColor="@color/white"
+        android:textSize="13dp" />
+
+    <ImageButton
+        android:id="@+id/delete_lib_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/fourth_picture"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/delete_24" />
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,325 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search_frag"
+    android:background="@drawable/linenear_background">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/search_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Tìm kiếm"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/search_frame"
+        android:layout_width="320dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/search_txt"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rought_button">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/search_text"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:id="@+id/search_result_btn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="21dp"
+            android:background="@drawable/ic_baseline_searchs_24" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/null_search_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Không có kết quả tìm kiếm"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/search_frame"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchfrag_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_frame"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="15dp" />
+
+    <TextView
+        android:id="@+id/search_title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchfrag_search_result"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Chủ đề"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/topic_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_title_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/topic_work_image"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/adventure_topic" />
+
+        <TextView
+            android:id="@+id/topic_work_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic_work_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Công việc"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/topic_adventure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_title_txt"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/topic_adventure_image"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:background="@drawable/travel_topic"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/topic_adventure_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic_adventure_image"
+            android:layout_centerHorizontal="true"
+            android:text="Phiêu lưu"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topic_science"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topic_work"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:id="@+id/topic_science_image"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/science_topic" />
+
+        <TextView
+            android:id="@+id/topic_science_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic_science_image"
+            android:layout_centerHorizontal="true"
+            android:text="Khoa học"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topic_fiction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topic_work"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:id="@+id/topic_fiction_image"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/fiction_topic" />
+
+        <TextView
+            android:id="@+id/topic_fiction_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic_fiction_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Viễn tưởng"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topic_life"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topic_science"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:id="@+id/topic_life_image"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/life_topic" />
+
+        <TextView
+            android:id="@+id/topic_life_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic_life_image"
+            android:layout_centerHorizontal="true"
+            android:text="Cuộc sống"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topic_romantic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topic_science"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:id="@+id/topic_romantic_image"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/romantic_topic" />
+
+        <TextView
+            android:id="@+id/topic_romantic_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic_romantic_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Lãng mạn"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topic_detective"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topic_romantic"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:id="@+id/topic_detective_image"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/detective_topic" />
+
+        <TextView
+            android:id="@+id/topic_detective_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic_detective_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Trinh thám"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topic_horror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topic_life"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:id="@+id/topic_horror_image"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/horror_topic" />
+
+        <TextView
+            android:id="@+id/topic_horror_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic_horror_image"
+            android:layout_centerHorizontal="true"
+            android:text="Kinh dị"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/topic_horror"/>
+</RelativeLayout>
+</ScrollView>

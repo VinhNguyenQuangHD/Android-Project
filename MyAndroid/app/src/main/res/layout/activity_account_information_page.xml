@@ -1,0 +1,189 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linenear_background"
+    tools:context=".AccountInformationPage">
+
+    <TextView
+        android:id="@+id/accountpage_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quản lý tài khoản"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+    <ImageView
+        android:id="@+id/accountpage_img_username"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/accountpage_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/accountpage_text_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accountpage_img_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="#tennguoidung"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/accountpage_email_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accountpage_text_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="#emailnguoidung"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/accountpage_type_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accountpage_email_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="#loainguoidung"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/accountpage_description_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accountpage_type_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="#motanguoidung"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accountpage_description_username"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rough_corner"
+        android:padding="15dp"
+        android:text="Chỉnh sửa thông tin"
+        android:textColor="@color/purple_500"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/accountpage_friendlist_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_profile"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Danh sách bạn bè"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/accountpage_friendlist_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accountpage_friendlist_username"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/friendlist_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Bạn bè hiện có"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/friend_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/friendlist_txt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/username_recommend_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/friend_list"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Gợi ý "
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/username_recommend_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username_recommend_txt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/accountpage_book_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accountpage_friendlist_zone"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Lịch sử đọc sách "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/book_record_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accountpage_book_record"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp" />
+
+    <ImageButton
+        android:id="@+id/clear_history_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/accountpage_friendlist_zone"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/delete_24" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/book_record_list"></RelativeLayout>
+</RelativeLayout>
+</ScrollView>

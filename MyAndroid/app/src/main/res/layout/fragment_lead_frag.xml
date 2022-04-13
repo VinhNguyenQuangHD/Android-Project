@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lead_frag"
+    android:background="@drawable/linenear_background">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/leaderboard_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Bảng xếp hạng"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/leaderboard_top_3_detail_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leaderboard_txt"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="70dp"
+        android:text="Top 3 nổi bật"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/top_3_best_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leaderboard_top_3_detail_txt"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/leaderboard_detail_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_3_best_view"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Chi tiết Bảng xếp hạng"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/leaderboard_detail_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leaderboard_detail_txt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+</RelativeLayout>
